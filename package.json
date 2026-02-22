@@ -1,0 +1,26 @@
+{
+  "name": "skills-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:frontend": "npm run dev --prefix frontend",
+    "start:backend": "npm start --prefix backend",
+    "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzeezAbir/skills-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AzeezAbir/skills-tracker/issues"
+  },
+  "homepage": "https://github.com/AzeezAbir/skills-tracker#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
