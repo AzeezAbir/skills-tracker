@@ -2,6 +2,7 @@
 // import Box from "@mui/material/Box";
 import { Button } from "@mui/material";
 import Homebtn from "../components/Buttons/Homebtn";
+// import ProgBar from "../components/ProgBar";
 import Clear from "../components/Buttons/Close";
 export default function C12() {
   const clicker = () => {
@@ -10,8 +11,12 @@ export default function C12() {
 
   return (
     <>
-      <Homebtn />
-      <br />
+      <span>
+        <Homebtn />
+      </span>
+      {/* <ProgBar /> */}
+
+      {/* <br /> */}
       {/* <Button onClick={clicker}>hi</Button> */}
     </>
   );

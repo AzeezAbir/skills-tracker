@@ -13,6 +13,7 @@ skills-dashboard/
 ├── src/
 │ ├── components/ # Reusable UI pieces (buttons, inputs)
 │ ├── pages/ # Page-level components (Login, Dashboard)
+│ ├── styles/ # custom css
 │ ├── context/ # State management (if needed)
 │ └── App.jsx
 └── package.json # Frontend dependencies
