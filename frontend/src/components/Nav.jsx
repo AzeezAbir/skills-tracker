@@ -9,10 +9,12 @@ export default function Nav() {
             Ezee Notes
           </a>
         </h1> */}
-
       <CustomLink className="links" to="/p" Children={"Physics"}></CustomLink>
+      <span> </span>
       <CustomLink className="links" to="/c" Children={"Chemistry"}></CustomLink>
+      <span> </span>
       <CustomLink className="links" to="/b" Children={"Biology"}></CustomLink>
+      <span> </span>
     </nav>
   );
 }
