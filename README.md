@@ -8,7 +8,7 @@ skills-dashboard/
 │ ├── routes/ # API endpoints defining URLs
 │ ├── package.json # Backend dependencies
 │ └── server.js # Entry point for the backend
-└── frontend/ # React environment (via Vite or Create React App)
+└── frontend/ # React environment
 ├── public/
 ├── src/
 │ ├── components/ # Reusable UI pieces (buttons, inputs)

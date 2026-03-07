@@ -1,0 +1,43 @@
+import { Link, useMatch, useResolvedPath } from "react-router";
+import {} from "react-router";
+// import "./../links.css";
+export default function Nav() {
+  return (
+    <nav>
+      {/* <h1>
+          <a href="/" className="site-title">
+            Ezee Notes
+          </a>
+        </h1> */}
+
+      <CustomLink className="links" to="/p" Children={"Physics"}></CustomLink>
+      <CustomLink className="links" to="/c" Children={"Chemistry"}></CustomLink>
+      <CustomLink className="links" to="/b" Children={"Biology"}></CustomLink>
+    </nav>
+  );
+}
+
+function CustomLink({ to, Children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  // switch (Children) {
+  //   case "Physics":
+  //     console.log("Physicsssss");
+  //     break;
+  //   case "Chemistry":
+  //     console.log("Chemisssss");
+  //     break;
+  //   case "Biology":
+  //     console.log("BIOOOOOO");
+  //     break;
+  // }
+  return (
+    <>
+      <span className={isActive ? "active" : ""}>
+        <Link to={to} {...props}>
+          {Children}
+        </Link>
+      </span>
+    </>
+  );
+}
