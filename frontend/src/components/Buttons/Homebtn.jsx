@@ -5,7 +5,12 @@ import "../../styles/UI.css";
 export default function Homebtn() {
   return (
     <>
-      <Link href="/" sx={{ "&:hover": { color: "red" } }} color="error">
+      <Link
+        href="/"
+        className="cross"
+        sx={{ "&:hover": { color: "red" } }}
+        color="error"
+      >
         <Clear />
       </Link>
     </>

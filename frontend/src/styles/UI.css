@@ -1,3 +1,15 @@
 /* .cross {
   color: aqua;
 } */
+/* img  {
+  width: 30vw;
+  height: 20vw;
+} */
+
+span {
+  /* margin: 20px; */
+  /* background-color: aqua; */
+}
+.actionCardd {
+  display: inline;
+}
