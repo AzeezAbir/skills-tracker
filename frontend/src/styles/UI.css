@@ -6,10 +6,10 @@
   height: 20vw;
 } */
 
-span {
-  /* margin: 20px; */
-  /* background-color: aqua; */
-}
 .actionCardd {
   display: inline;
+}
+
+.correct {
+  color: green;
 }
