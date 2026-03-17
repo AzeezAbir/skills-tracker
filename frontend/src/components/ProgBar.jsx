@@ -7,7 +7,7 @@ export default function ProgBar({ progressValue = 50 }) {
         // marginLeft={"-200px"}
         // marginRight={"200px"}
         sx={{
-          marginX: 10,
+          marginX: 1,
           width: "100%",
           height: 16,
           backgroundColor: "#d4d4d4",
