@@ -1,3 +1,5 @@
+![Navigation](frontend/src/assets/Ezee.gif)
+
 ```
  skills-dashboard
 ├──  .gitignore         # Root ignore file (crucial for node_modules & .env)
