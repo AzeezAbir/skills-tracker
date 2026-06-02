@@ -11,8 +11,9 @@ export default function ActionAreaCard({
   index,
   onCardSelect,
   isSelected,
+  imageName = "images.png",
 }) {
-  const [selectedCard, setSelectedCard] = React.useState(0);
+  // const [selectedCard, setSelectedCard] = React.useState(0);
   // const [index = 1, setIndex] = React.useState(0);
   return (
     <>
@@ -30,7 +31,7 @@ export default function ActionAreaCard({
         onClick={() => {
           onCardSelect(index);
         }}
-        data-active={selectedCard === index ? "" : undefined}
+        data-active={isSelected ? "" : undefined}
       >
         <CardActionArea
           sx={{
@@ -45,11 +46,12 @@ export default function ActionAreaCard({
             sx={{
               padding: "20px",
               width: "300px",
+              height: "300px",
             }}
             component="img"
             height="140"
-            image="/src/assets/Images/images.png"
-            alt="green iguana"
+            image={`/src/assets/Images/${imageName}`}
+            alt={fast}
           />
           <CardContent>
             <Typography
