@@ -1,11 +1,12 @@
 import { Outlet } from "react-router";
 import Nav from "../components/Nav";
+import "./../styles/Home.css";
 export default function MainLayout() {
   return (
     <>
       <h1>
         <a href="/" className="site-title">
-          Ezee Notes
+          Ezee Notes Quiz App
         </a>
       </h1>
       <Nav />
